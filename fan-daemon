@@ -1,0 +1,12 @@
+[Unit]
+Description=Fan Speed Controller
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/nameofuser/systemscripts/cpufan.py
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
+
