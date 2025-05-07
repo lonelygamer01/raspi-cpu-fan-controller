@@ -28,7 +28,7 @@ while True:
     for t, s in FAN_SPEEDS:
         if temp >= t:
             speed = s
-    # Conver 0-255 to 100%
+    # Convert 0-255 to 100%
     set_fan_speed(int(speed * 2.55))
     
     time.sleep(5)
